@@ -31,6 +31,7 @@ public class Inventario : MonoBehaviour
     public void botonSalir()
     {
         estaAbierto = false;
+        ControlGlobal.inventarioAbierto = false;
         cerrarInventario.Play();
         StartCoroutine(InvControl());
     }
