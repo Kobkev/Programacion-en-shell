@@ -5,11 +5,11 @@ using UnityEngine;
 public class ControlGlobal : MonoBehaviour
 {
     public static bool inventarioAbierto = false;
-    public static bool desactivarMovimiento = false;
+    public static bool pausaAbierto = false;
 
     void Update()
     {
-        if (desactivarMovimiento == true)
+        if (pausaAbierto == true)
         {
             inventarioAbierto = true;
         }

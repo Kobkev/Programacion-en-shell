@@ -12,28 +12,39 @@ public class Inventario : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Tab) && estaAbierto == false && puedeCerrar == false)
+        if (ControlGlobal.inventarioAbierto == false && ControlGlobal.pausaAbierto == false)
         {
-            estaAbierto = true;
-            ControlGlobal.inventarioAbierto = true;
-            abrirInventario.Play();
-            StartCoroutine(InvControl());
+            if (Input.GetKey(KeyCode.Tab) && estaAbierto == false && puedeCerrar == false)
+            {
+                estaAbierto = true;
+                ControlGlobal.inventarioAbierto = true;
+                abrirInventario.Play();
+                StartCoroutine(InvControl());
+            }
         }
-        else if (Input.GetKey(KeyCode.Tab) && estaAbierto == true && puedeCerrar == true)
+        if (ControlGlobal.inventarioAbierto == true && ControlGlobal.pausaAbierto == false)
         {
-            estaAbierto = false;
-            ControlGlobal.inventarioAbierto = false;
-            cerrarInventario.Play();
-            StartCoroutine(InvControl());
+            if (Input.GetKey(KeyCode.Tab) && estaAbierto == true && puedeCerrar == true)
+            {
+                estaAbierto = false;
+                ControlGlobal.inventarioAbierto = false;
+                cerrarInventario.Play();
+                StartCoroutine(InvControl());
+            }
         }
     }
 
-    public void botonSalir()
+    public void botonMenu()
     {
         estaAbierto = false;
         ControlGlobal.inventarioAbierto = false;
         cerrarInventario.Play();
         StartCoroutine(InvControl());
+    }
+
+    public void botonSalir()
+    {
+
     }
 
     IEnumerator InvControl()

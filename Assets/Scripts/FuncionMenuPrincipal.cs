@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class FuncionMenuPrincipal : MonoBehaviour
 {
     public AudioSource buttonPress;
+    public GameObject pantallaOpciones;
+
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
 
     public void PlayGame()
     {
@@ -15,6 +21,13 @@ public class FuncionMenuPrincipal : MonoBehaviour
 
     public void SalirJuego()
     {
+        buttonPress.Play();
         Application.Quit();
+    }
+
+    public void Opciones()
+    {
+        buttonPress.Play();
+        pantallaOpciones.SetActive(true);
     }
 }
