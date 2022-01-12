@@ -16,7 +16,7 @@ public class MenuOpciones : MonoBehaviour
     public AudioSource buttonPress;
     Resolution[] resolutions;
 
-    [SerializeField] private Slider volumeSlider = null;
+    //[SerializeField] private Slider volumeSlider = null;
     [SerializeField] private Text volumeTextUI = null;
     public AudioMixer audioMixer;
 

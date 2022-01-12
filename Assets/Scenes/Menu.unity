@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0005711001, g: 0.00076083426, b: 0.40324974, a: 1}
+  m_IndirectSpecularColor: {r: 0.0005168522, g: 0.00069812365, b: 0.39433697, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -380,7 +380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21730994}
   m_LocalRotation: {x: 0.095261216, y: -0.9893256, z: 0.010569246, w: -0.10976581}
-  m_LocalPosition: {x: 26.473688, y: 1.3030002, z: 36.370476}
+  m_LocalPosition: {x: 26.473688, y: 1.5574117, z: 36.370476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2078699087}
@@ -10345,7 +10345,6 @@ MonoBehaviour:
   menuPausa: {fileID: 0}
   Opciones: {fileID: 1230517540}
   buttonPress: {fileID: 2078699086}
-  volumeSlider: {fileID: 1233272169}
   volumeTextUI: {fileID: 1086902798}
   audioMixer: {fileID: 24100000, guid: cccd889e99c64204bb2080ce4b82f293, type: 2}
 --- !u!114 &1230517542
@@ -12729,7 +12728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667419482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -151, y: -135.625, z: -540}
+  m_LocalPosition: {x: -151, y: -85.4, z: -540}
   m_LocalScale: {x: 295.79434, y: 20.784561, z: 162.47238}
   m_Children:
   - {fileID: 498446769}
